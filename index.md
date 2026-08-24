@@ -4,9 +4,8 @@
 ========================================================================= -->
 
 
-## 🎹 The Hero Section
+## 🎥 The Hero Section
 ![VideoPeek](https://raw.githubusercontent.com/barshasantak/videopeek/main/VideoPeek_256.png)
-
 <br>
   
 See Beneath the Frame. The native, studio-grade video specification analyzer and side-by-side A-B diff comparator engineered exclusively for macOS.
@@ -144,13 +143,13 @@ Stop guessing what is inside your video containers. Verify color gamuts, confirm
 </details>
 
 <details>
-<summary><strong>Is VideoPeek free and private?</strong></summary>
-<p>Yes. VideoPeek is 100% free, open-source software. It contains zero analytics, no telemetry, no tracking, and never makes unauthorized network connections.</p>
+<summary><strong>Is VideoPeek private?</strong></summary>
+<p>Yes. VideoPeek is 100% secured. It contains zero analytics, no telemetry, no tracking, and never makes unauthorized network connections.</p>
 </details>
 
 <details>
 <summary><strong>How do I report a bug or request a new container format?</strong></summary>
-<p>You can open an issue or start a discussion on our official <a href="https://github.com/santakd/VideoPeek/issues">GitHub Issues page</a>.</p>
+<p>You can open an issue or start a discussion on our official <a href="https://github.com/barshasantak/VideoPeek/issues">GitHub Issues page</a>.</p>
 </details>
 
 

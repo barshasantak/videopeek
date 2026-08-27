@@ -96,17 +96,62 @@ VideoPeek parses uncompressed cinema masters, broadcast containers, and web stre
 
 Most diagnostic utilities are bloated ports. VideoPeek is built exclusively for macOS:
 
-    ┌────────────────────────────────────────────────────────────────────┐
-    │ METRIC                     │ VIDEOPEEK          │ MEDIAINFO (GUI)  │
-    ├────────────────────────────┼────────────────────┼──────────────────|
-    │ Native macOS Architecture  │ ✅ 100% Swift      │ ⚠️ WxWidgets Port│
-    │ Launch Time                │ ⚡ < 10 ms          │ 🐢 800+ ms       │
-    │ Memory Footprint           │ 🪶 ~ 24 MB         │ 🐘 120 MB        │
-    │ Visual A-B Diff Mode       │ ✅ Built-in Split  │ ❌ None          │
-    │ Drag & Drop 2 Files        │ ✅ Instant Compare │ ❌ Single file   │
-    │ ProMotion 120Hz Rendering  │ ✅ Liquid Smooth   │ ❌ Frame drops   │
-    │ Cryptographic Hashing      │ ✅ Hardware NEON   │ ❌ Not included  │
-    └────────────────────────────────────────────────────────────────────┘
+<div style="overflow-x: auto; margin: 24px 0;">
+  <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 0.9rem; text-align: left; border: 1px solid rgba(128,128,128,0.25); border-radius: 8px; overflow: hidden;">
+    <thead>
+      <tr style="background: rgba(128,128,128,0.1); border-bottom: 2px solid rgba(128,128,128,0.25);">
+        <th style="padding: 12px 16px; width: 30%;">Capability / Metric</th>
+        <th style="padding: 12px 16px; width: 25%; background: rgba(0, 113, 227, 0.08); color: #0071e3; font-weight: 700;">VideoPeek</th>
+        <th style="padding: 12px 16px; width: 25%;">MediaInfo (GUI)</th>
+        <th style="padding: 12px 16px; width: 20%;">ffprobe (CLI)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15);">
+        <td style="padding: 10px 16px; font-weight: 600;">Native Architecture</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">✅ 100% Swift / CoreMedia</td>
+        <td style="padding: 10px 16px;">⚠️ WxWidgets Port</td>
+        <td style="padding: 10px 16px;">⚠️ C Utility</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15); background: rgba(128,128,128,0.02);">
+        <td style="padding: 10px 16px; font-weight: 600;">Launch Time</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">⚡ &lt; 10 ms (Instant)</td>
+        <td style="padding: 10px 16px;">🐢 800+ ms</td>
+        <td style="padding: 10px 16px;">⚡ Fast</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15);">
+        <td style="padding: 10px 16px; font-weight: 600;">Memory Footprint</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">🪶 ~ 24 MB (No VRAM Buffer)</td>
+        <td style="padding: 10px 16px;">🐘 120 MB</td>
+        <td style="padding: 10px 16px;">🪶 ~ 20 MB</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15); background: rgba(128,128,128,0.02);">
+        <td style="padding: 10px 16px; font-weight: 600;">Visual A-B Diff Mode</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">✅ Built-in Split-Table</td>
+        <td style="padding: 10px 16px;">❌ None</td>
+        <td style="padding: 10px 16px;">❌ Manual diff</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15);">
+        <td style="padding: 10px 16px; font-weight: 600;">Frame Drift Analytics</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">✅ Exact (ΔFrames &amp; Δt)</td>
+        <td style="padding: 10px 16px;">❌ None</td>
+        <td style="padding: 10px 16px;">❌ Manual math</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(128,128,128,0.15); background: rgba(128,128,128,0.02);">
+        <td style="padding: 10px 16px; font-weight: 600;">120Hz ProMotion UI</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">✅ Liquid Smooth</td>
+        <td style="padding: 10px 16px;">❌ Frame drops</td>
+        <td style="padding: 10px 16px;">❌ Terminal only</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 16px; font-weight: 600;">Hardware SHA-256</td>
+        <td style="padding: 10px 16px; background: rgba(0, 113, 227, 0.04); font-weight: 600;">✅ CryptoKit NEON Engine</td>
+        <td style="padding: 10px 16px;">❌ Not included</td>
+        <td style="padding: 10px 16px;">⚠️ Separate tool</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 ## ✨ User Experience Highlights

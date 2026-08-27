@@ -43,6 +43,7 @@ We asked a simple question: **What if you had a blazing-fast, visually pristine 
 
 VideoPeek was created to answer that need. Built from the ground up in 100% native Swift and SwiftUI, VideoPeek taps directly into Apple’s low-level `CoreMedia`, `AVFoundation`, `VideoToolbox`, and `CryptoKit` frameworks. No web runtimes. No GPU memory exhaustion. Just pure, instant video intelligence.
 
+
 ## ⚡ Key Features
 
 <table width="100%">
@@ -144,7 +145,7 @@ Stop guessing what is inside your video containers. Verify color gamuts, confirm
 
 <details>
 <summary><strong>Is VideoPeek private?</strong></summary>
-<p>Yes. VideoPeek is 100% secured. It contains zero analytics, no telemetry, no tracking, and never makes unauthorized network connections.</p>
+<p>Yes. VideoPeek is 100% secure. It contains zero analytics, no telemetry, no tracking, and never makes unauthorized network connections.</p>
 </details>
 
 <details>

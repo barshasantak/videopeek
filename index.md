@@ -39,7 +39,7 @@ In digital cinema, broadcast mastering, color grading, and streaming delivery, v
 * **Frame rate pull-downs & drift:** Did an automated web pipeline drop 2 frames or introduce a 23.976 $\rightarrow$ 29.97 fps pulldown stutter?
 * **Bloated tooling:** Opening DaVinci Resolve or Final Cut Pro just to check a video's transfer function (EOTF) or FourCC codec takes 30 seconds. QuickTime Player's basic inspector hides crucial mastering data, and terminal tools like `ffprobe` disrupt your creative flow.
 
-We asked a simple question: **What if you had a blazing-fast, visually pristine Mac app that reveals the complete DNA of any video file in under 2 milliseconds?**
+We asked a simple question: **What if you had a blazing-fast, visually pristine Mac app that reveals the complete DNA of any video file in under 200 milliseconds?**
 
 VideoPeek was created to answer that need. Built from the ground up in 100% native Swift and SwiftUI, VideoPeek taps directly into Apple’s low-level `CoreMedia`, `AVFoundation`, `VideoToolbox`, and `CryptoKit` frameworks. No web runtimes. No GPU memory exhaustion. Just pure, instant video intelligence.
 

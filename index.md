@@ -221,6 +221,17 @@ Stop guessing what is inside your video containers. Verify color gamuts, confirm
   <!-- Question 4 -->
   <details style="border: 1px solid rgba(128,128,128,0.25); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,0.02); transition: all 0.2s ease;">
     <summary style="padding: 14px 18px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; font-size: 1rem;">
+      <span>Does VideoPeek detect HDR color metadata (HDR10, Dolby Vision, HLG) and Variable Frame Rates (VFR)?</span>
+      <span style="font-size: 0.75rem; color: #0071e3; font-weight: 600; background: rgba(0,113,227,0.1); padding: 4px 10px; border-radius: 999px; white-space: nowrap; margin-left: 12px;">+ View Answer ▾</span>
+    </summary>
+    <div style="padding: 14px 18px 18px 18px; border-top: 1px solid rgba(128,128,128,0.15); color: #424245; font-size: 0.95rem; line-height: 1.6; background: rgba(128,128,128,0.01);">
+      Yes. VideoPeek directly extracts track stream headers to verify color primaries (Rec. 709 vs. Rec. 2020), transfer characteristics (PQ, HLG, Linear), Dolby Vision configuration profiles/levels, and mastering display luminance metadata. It also identifies whether a file uses a Constant Frame Rate (CFR) or Variable Frame Rate (VFR) stream to prevent audio-sync drift in video editing NLEs.
+    </div>
+  </details>
+
+  <!-- Question 5 -->
+  <details style="border: 1px solid rgba(128,128,128,0.25); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,0.02); transition: all 0.2s ease;">
+    <summary style="padding: 14px 18px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; font-size: 1rem;">
       <span>How do I report a bug or request a new container format?</span>
       <span style="font-size: 0.75rem; color: #0071e3; font-weight: 600; background: rgba(0,113,227,0.1); padding: 4px 10px; border-radius: 999px; white-space: nowrap; margin-left: 12px;">+ View Answer ▾</span>
     </summary>

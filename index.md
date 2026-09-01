@@ -8,7 +8,8 @@
 ![VideoPeek](https://raw.githubusercontent.com/barshasantak/videopeek/main/VideoPeek_256.png)
 <br>
   
-See Beneath the Frame. The native, studio-grade video specification analyzer and side-by-side A-B diff comparator engineered exclusively for macOS.
+### See Beneath the Frame with VideoPeek. 
+The native, studio-grade video specification analyzer and side-by-side A-B diff comparator engineered exclusively for macOS.
   
 
     ┌──────────────────────────────────────────────────────────────────────────────────────────────────────┐
